@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.port{
+    font-weight: 800;
+    color: red;
+    font-size: 40px;
+}
+.navigation_bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 25px;
+    font-size: 30px;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-image: linear-gradient(120deg,black,#4d1300);
+    animation: slidebottom 1s ease forwards;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.animated-link {
+    position: relative; /* Position relative for the pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.animated-link::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%;    
+    height: 2px; 
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.animated-link:hover::after {
+    transform: scaleX(1); 
+}
+
+.animated-link:hover {
+    color: red 
+}
+
+.home{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 190px;
+    padding-bottom: 170px;
+    background-image: linear-gradient(120deg,black,#00004d);
+    
+}
+
+.home-container{
+    /* border: 5px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home-content{
+    /* border: 5px solid red; */
+    color: white;
+    height:  100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    animation: slideright 0.5s ease forwards;
+}
+
+.home-img{
+    display: flex;
+    border-radius: 48%;
+    box-shadow: 0 0 80px red;
+    animation: slidebottom 0.5s ease forwards;
+}
+
+.home-about .texts{
+    /* border: 5px solid green; */
+    padding: 5px;
+}
+.home-about h4:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-about h4 span{
+    color: red;
+}
+
+.home-icons{
+    /* border: 5px solid green; */
+    display: flex;
+    font-size: 40px;
+    gap: 50px;
+}
+
+.home-icons a{
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    border: 2px solid red;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: slideright 2s ease forwards;    
+}
+
+.home-icons a:hover{
+    background: red;
+    color: #000;
+    box-shadow: 0 0 20px red;
+}
+
+.about{
+    display: flex;
+    max-width: 100%;
+}
+.about-container{
+    display: flex;
+    /* border: 5px solid green; */
+    width: 100%;
+    color: red;
+    padding-top: 10rem;
+    padding-bottom: 16rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+    background-image: linear-gradient(240deg,#00004d,black);
+    flex-wrap: wrap;
+}
+.about-container h1{
+    text-decoration: underline;
+}
+.about-container p{
+    color: white;
+    text-decoration: none;
+}
+.about-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 35px;
+}
+.about-content-inside{
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(120deg,black,#00004d);
+
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+.sub-title span{
+    color: red;
+}
+.sec{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.sec1{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.container1{
+    width: 600px;
+    width: 90%;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+    margin: 0 auto;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: white;
+
+}
+.tech{
+    color: red;
+    font-size: 35px;
+}
+.bar{
+    font-size: 27px;
+    color: white;
+}
+.technical-bars .bar{
+    margin: 40px 0;
+}
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 8px;
+    background-color: gray;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: 0 15px 80px white;
+
+}
+
+.sec {
+    /* padding-right: 4rem; */
+    box-shadow: 4px 4px 10px rgb(54, 128, 155);
+    margin-top: 30px;
+}
+.sec1{
+    /* padding-right: 4rem; */
+    box-shadow: 4px 4px 10px rgb(54, 128, 155);
+    margin-top: 30px;
+}
+
+
+
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color:#cc3300;
+    position:absolute;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: 0 15px 80px red;
+
+}
+.progress-line.html span{
+    width: 80%;
+    box-shadow: 0 15px 80px red;
+}
+.progress-line.css span{
+    width: 70%;
+    box-shadow: 0 15px 80px red;
+}
+.progress-line.django span{
+    width: 40%;
+    box-shadow: 0 15px 80px red;
+}
+.progress-line.java span{
+    width: 40%;
+    box-shadow: 0 15px 80px red;
+}
+
+
+.progress-line.python span{
+    width: 90%;
+    box-shadow: 0 15px 80px red;
+}
+.progress-line.java span{
+    width: 70%;
+    box-shadow: 0 15px 80px red;
+}
+.progress-line.bash span{
+    width: 70%;
+    box-shadow: 0 15px 80px red;
+}
+.progress-line.go span{
+    width: 40%;
+    box-shadow: 0 15px 80px red;
+}
+
+
+.progress-line SPAN::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: white;
+    font-weight: 12000;
+    font-size: 15px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+    box-shadow: 0 15px 80px white;
+
+}
+
+.progress-line.html span::after{
+    content: "80%";
+}
+.progress-line.css span::after{
+    content: "70%";
+}
+.progress-line.django span::after{
+    content: "40%";
+}
+.progress-line.java span::after{
+    content: "90%";
+}
+
+.progress-line.python span::after{
+    content: "90%";
+}
+.progress-line.java span::after{
+    content: "70%";
+}
+.progress-line.bash span::after{
+    content: "70%";
+}
+.progress-line.go span::after{
+    content: "40%";
+}
+
+.progress-line span::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width:0px;
+    border-right-width: 0px;
+    border-top-color:black;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.sec, .sec1 {
+    justify-content: center; /* Center the bars on smaller screens */
+    width: 70%; 
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+      transform: translateX(100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+
+  @keyframes slidebottom {
+    0% {
+      transform: translateY(-100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sub-title {
+        font-size: 40px; 
+    }
+    .container1 {
+        padding: 50px 20px; 
+    }
+    .technical-bars .bar {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-title {
+        font-size: 30px; 
+    }
+    .container1 {
+        padding: 30px 10px; 
+    }
+    .technical-bars .bar {
+        font-size: 18px; 
+    }
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+    
+} 
